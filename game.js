@@ -162,9 +162,13 @@ function logic()
 
 function haveWon()
 {
-    if(snake.elements[0].x == hero.x && snake.elements[0].y == hero.y){
-        won = -1;
-    }else if(door.timer <=0 && hero.x == door.x && hero.y == door.y){
+    snake.elements.forEach(function(element){
+        if(element.x == hero.x && element.y == hero.y){
+            won = -1;
+        }
+    });
+    
+    if(door.timer <=0 && hero.x == door.x && hero.y == door.y){
         won = 1;
     }
 }
