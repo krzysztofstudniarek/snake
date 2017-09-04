@@ -1,5 +1,5 @@
 ﻿
-var width = 500, height = 600, fps=100, extensionTime = 500, move = 50, lvl= 0;
+var width = 500, height = 600, fps=100, extensionTime = 250, move = 50, lvl= 0;
 
 var won = 0;
 
