@@ -210,6 +210,11 @@ function main()
                 update();
                 drawInterface(); 
             }else if(won > 0){
+                controls();
+                logic();
+                draw();
+                update();
+                drawInterface();
                 lvl ++; 
                 move -= 5;
                 door.timer = 500;
@@ -217,8 +222,8 @@ function main()
                 door.y = Math.floor(Math.random()*50) + 4;
                 won = 0;
             }else if(won < 0){
-                textout(canvas,font,"You've lost!",20,40,15,makecol(0,0,0));
-                textout(canvas,font,"SCHORE: "+lvl,20,40,15,makecol(0,0,0));
+                textout(canvas,font,"You've lost!",195,265,15,makecol(0,0,0));
+                textout(canvas,font,"SCORE: "+lvl,205,285,15,makecol(0,0,0));
             }
             haveWon();
 	
