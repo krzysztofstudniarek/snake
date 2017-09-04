@@ -1,0 +1,10 @@
+#canvas_id {
+  position: absolute;
+  border : 1px;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0 0 -250px;
+}
+body{
+  background-color: black;
+}
