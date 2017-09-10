@@ -50,8 +50,6 @@ function draw()
 
     rectfill(canvas,hero.x * 10 + 1,hero.y *10 + 1, 8, 8,makecol(0,0,0));
 
-
-    console.log(door.timer);
     if(door.timer < 0){
         drawDoor();
     }
@@ -99,7 +97,6 @@ function update()
 function controls()
 {
     if(pressed[KEY_UP]){
-        console.log(hero.y);
         hero.y --;
     }else if(pressed[KEY_DOWN]){
         hero.y ++;
